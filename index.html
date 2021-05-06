@@ -14,41 +14,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- -------------NAVBAR-------------- -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <div class="container">
         <div class="navbar-brand">CLARUSWAY School</div>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#mynav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynav">
-          <ul class="navbar-nav">
-            <li class="nav-item text-uppercase">
-              <a
-                href=""
-                class="nav-link active border-bottom border-warning border-3"
-                >Home</a
+        <!-- -------- -->
+        <div>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav ml-auto">
+              <li
+                class="nav-item text-uppercase border-bottom border-warning border-3"
               >
-            </li>
-            <li class="nav-item text-uppercase">
-              <a href="" class="nav-link">About</a>
-            </li>
-            <li class="nav-item text-uppercase">
-              <a href="" class="nav-link">Courses</a>
-            </li>
-            <li class="nav-item text-uppercase">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-          </ul>
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="courses.html" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- ------------- -->
         </div>
       </div>
     </nav>
-
-    <!-- CAROUSEL -->
+    <!-- ----------CAROUSEL------------------ -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -78,24 +79,45 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/slider1.jpg" class="d-block w-100" alt="..." />
+          <img
+            src="./img/slider1.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="400px"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
+            <h5 class="display-4">Successful Future</h5>
             <p>Some representative placeholder content for the first slide.</p>
+            <button class="btn btn-warning">Register</button>
+            <button class="btn btn-warning">Start Now</button>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/slider2.jpg" class="d-block w-100" alt="..." />
+          <img
+            src="./img/slider2.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="400px"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
+            <h5 class="display-4">Pupular Education</h5>
             <p>Some representative placeholder content for the second slide.</p>
+            <button class="btn btn-warning">Register</button>
+            <button class="btn btn-warning">Start Now</button>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/slider3.jpg" class="d-block w-100" alt="..." />
+          <img
+            src="./img/slider3.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="400px"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
+            <h5 class="display-4">Best Online Courses</h5>
             <p>Some representative placeholder content for the third slide.</p>
+            <button class="btn btn-warning">Register</button>
+            <button class="btn btn-warning">Start Now</button>
           </div>
         </div>
       </div>
@@ -118,8 +140,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <!-- HOME-ICON -->
+    <!-- -------HOME-ICON------ -->
     <div class="home-icon">
       <div class="container">
         <div class="row">
@@ -192,8 +213,7 @@
         </div>
       </div>
     </div>
-
-    <!-- HOME-CONTENT -->
+    <!-- -----------HOME-CONTENT----------- -->
     <div id="home-content">
       <div class="overlay">
         <div class="row">
@@ -210,8 +230,7 @@
         </div>
       </div>
     </div>
-
-    <!-- HOME-INFO -->
+    <!-- -------HOME-INFO------- -->
     <div class="home-info">
       <div class="container">
         <div class="row">
@@ -230,7 +249,6 @@
         </div>
       </div>
     </div>
-
     <!-- -----VIDEO------- -->
     <div id="video">
       <div class="overlay">
@@ -254,6 +272,7 @@
                   />
                 </svg>
               </a>
+
               <!--Modal: modalYT-->
               <div
                 class="modal fade"
@@ -273,6 +292,7 @@
                         data-bs-dismiss="modal"
                       ></button>
                     </div>
+
                     <!--Body-->
                     <div class="modal-body mb-0 p-0">
                       <div
@@ -285,6 +305,7 @@
                         ></iframe>
                       </div>
                     </div>
+
                     <!--Footer-->
                     <div
                       class="modal-footer justify-content-center flex-column flex-md-row"
@@ -292,34 +313,72 @@
                       <span class="mr-4">Spread the word!</span>
                       <div>
                         <a type="button" class="btn-floating btn-sm btn-fb">
-                          <i class="fab fa-facebook-f"></i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            fill="currentColor"
+                            class="bi bi-facebook"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                            />
+                          </svg>
                         </a>
                         <!--Twitter-->
                         <a type="button" class="btn-floating btn-sm btn-tw">
-                          <i class="fab fa-twitter"></i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            fill="currentColor"
+                            class="bi bi-twitter"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                            />
+                          </svg>
                         </a>
                         <!--Google +-->
-                        <a type="button" class="btn-floating btn-sm btn-gplus">
-                          <i class="fab fa-google-plus-g"></i>
+                        <a type="button" class="btn-floating btn-md btn-gplus">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            fill="currentColor"
+                            class="bi bi-google"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                            />
+                          </svg>
                         </a>
                         <!--Linkedin-->
                         <a type="button" class="btn-floating btn-sm btn-ins">
-                          <i class="fab fa-linkedin-in"></i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            fill="currentColor"
+                            class="bi bi-linkedin"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                            />
+                          </svg>
                         </a>
                       </div>
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary btn-rounded btn-md ml-4"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
                     </div>
                   </div>
                   <!--/.Content-->
                 </div>
               </div>
               <!--Modal: modalYT-->
+
               <h3 class="text-secondary">Watch Us</h3>
             </div>
           </div>
@@ -327,7 +386,7 @@
       </div>
     </div>
 
-    <!-- GALERY -->
+    <!-- --------GALLERY-------- -->
     <h3 class="text-center mt-3">PHOTO GALLERY</h3>
     <div class="container">
       <div class="row mb-2">
@@ -338,7 +397,13 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent"
           >
-            <img src="./img/slider1.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider1.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -359,6 +424,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -366,12 +432,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider1.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -397,7 +465,13 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent1"
           >
-            <img src="./img/slider2.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider2.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -418,6 +492,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -425,12 +500,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider2.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -456,7 +533,13 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent2"
           >
-            <img src="./img/slider3.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider3.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -477,6 +560,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -484,12 +568,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider3.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -517,7 +603,13 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent"
           >
-            <img src="./img/slider1.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider1.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -538,6 +630,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -545,12 +638,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider1.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -576,7 +671,12 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent1"
           >
-            <img src="./img/slider2.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider2.jpg"
+              alt=""
+              width="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -597,6 +697,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -604,12 +705,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider2.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -635,7 +738,12 @@
             data-bs-toggle="modal"
             data-bs-target="#modalRelatedContent2"
           >
-            <img src="./img/slider3.jpg" alt="" width="100%" />
+            <img
+              src="./img/slider3.jpg"
+              alt=""
+              width="100%"
+              class="border border-secondary rounded-3"
+            />
           </a>
           <!--Modal: modalRelatedContent-->
           <div
@@ -656,6 +764,7 @@
                 <!--Header-->
                 <div class="modal-header">
                   <p class="heading">Related article</p>
+
                   <button
                     type="button"
                     class="btn-close"
@@ -663,12 +772,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!--Body-->
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-7">
                       <img src="./img/slider3.jpg" class="img-fluid" alt="" />
                     </div>
+
                     <div class="col-5">
                       <p><strong>My travel to paradise</strong></p>
                       <p>
@@ -689,7 +800,6 @@
         </div>
       </div>
     </div>
-
     <!-- -----SUBSCRIBE----- -->
     <div class="container-fluid bg-dark text-center text-white p-3">
       <div class="row">
@@ -721,6 +831,7 @@
         </div>
       </div>
     </div>
+
     <!-- -----FOOTER---- -->
     <div class="container text-center">
       <div class="row">
@@ -728,6 +839,7 @@
       </div>
     </div>
 
+    <!-- -------SCRIPTS------------------- -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
